@@ -130,3 +130,5 @@ dmypy.json
 
 # Output extensions
 *.csv
+*.json
+*.txt
