@@ -53,7 +53,7 @@ def main():
                         dict_nics[nic['id']] = [list_id[8], [list_id[10]]]
 
     with open(FILENAME, "w") as f:
-        f.write("resource_group, region, vm_name, vnet_name, subnet_name, nic_name\n")
+        f.write("subscription, resource_group, region, vm_name, vnet_name, subnet_name, nic_name\n")
         for _sub in subs.keys():
             print(f"Reading subscription '{subs[_sub]}' = '{_sub}'")
             json_vms = az_cli(f"vm list --subscription {_sub}")
